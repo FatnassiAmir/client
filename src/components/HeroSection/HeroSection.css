@@ -1,0 +1,82 @@
+.hero-section-container {
+  width: 100%;
+  min-height: 560px;
+  height: calc(100vh - 70px);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: url("../../assets/backg8.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hero-section-image {
+  width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-section-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 0px 0px rgb(100 7 248);
+  height: 380px;
+  width: 380px;
+  border-radius: 50%;
+}
+.portfolio-pectuer {
+  width: 94%;
+  height: 94%;
+  object-fit: cover;
+  border-radius: 50%;
+  z-index: 9;
+}
+.portfolio-pectuer:hover {
+  transform: scale(1.06);
+  transition: 1s ease-out;
+}
+.wave {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+.hero-section-detail {
+  width: 40%;
+}
+.hero-section-detail-container {
+  width: 100%;
+  text-align: start;
+  padding: 20px;
+}
+.hero-section-detail-name {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.hero-section-detail-name > span {
+  color: #1daafd;
+  font-size: 32px;
+}
+.typical {
+  color: rgb(100 7 248);
+  display: inline;
+}
+
+@media screen and  (max-width: 600px) {
+  .hero-section-container {
+    flex-direction: column;
+  }
+  .hero-section-detail,
+  .hero-section-image{
+    width: 100%;
+  }
+  .portfolio-pectuer {
+    z-index: inherit;
+  }
+  .hero-section-detail-container {
+    text-align: center;
+  }
+}
